@@ -1,0 +1,101 @@
+// sign up
+.signin-input-w{
+    border-radius: 0;
+    font-size: large;
+    padding-left: 0;
+    border-bottom: 1px solid rgba(0,0,0,1) !important;
+    border: 0;
+    box-shadow: 3px 3px 8px white;
+    &:focus{
+        border-radius: 0;
+    }
+    ::placeholder{
+        font-size: large;
+        color: rgba(0,0,0,.5) !important;
+        font-weight: 600;
+        margin-left: 0;
+    }
+   
+}
+
+//navbar
+.navitem-w{
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover{
+        font-size: 20px;
+    }
+    &.active{
+        color: white;
+        font-size: large;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 20px;
+        border-bottom: 2px solid white;
+    
+    }
+}
+
+//sidebar
+.sidebar-w{
+    .ant-menu-item{
+       &:hover{
+        background-color: white !important;
+        font-weight: 700;
+        span{
+            color: rgba(31, 72, 91, 1) !important;
+        }
+        svg{
+            width: 20px;
+            height: 20px;
+            color: rgba(31, 72, 91, 1) !important;
+        }
+       } 
+        .ant-menu-title-content{
+            font-size: 16px !important;
+            color: white;
+    
+        }
+    }
+    .ant-menu-item-selected{
+        
+        
+        background-color: white;
+        font-weight: 700;
+        span{
+            color: rgba(31, 72, 91, 1) !important;
+        }
+        svg{
+            width: 20px;
+            height: 20px;
+            color: rgba(31, 72, 91, 1) !important;
+        }
+    }
+    .ant-menu-submenu-title  {
+        font-size: large;
+        &:hover{
+            background-color: white !important;
+            font-weight: 700;
+            span{
+                color: rgba(31, 72, 91, 1) !important;
+            }
+            svg{
+                width: 20px;
+                height: 20px;
+                color: rgba(31, 72, 91, 1) !important;
+            }
+        }
+    }
+    ul{
+        margin: 0 !important;
+        svg{
+            width: 18px;
+            height: 18px;
+            margin-right: 5px;
+            color: white;
+        }
+    }
+    
+}

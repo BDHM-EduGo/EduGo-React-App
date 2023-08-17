@@ -1,4 +1,5 @@
-import { Col, Row, Typography, Tabs } from "antd";
+import { Col, Row, Typography, } from "antd";
+import { useState } from "react";
 
 const { Title, } = Typography;
 
@@ -20,13 +21,18 @@ const items = [
         label: 'Logout'
       },
   ];
-  const onChange = (key) => {
-    console.log(key);
-  };
+ 
 export default function Navbar() {
+    const [ active, setActive ] = useState(false);
+    const onChange = (key) => {
+        console.log(key);
+      };
   return (
     <>
-        <Row align='middle'  style={{backgroundColor:'rgba(31, 72, 91, 1)', height: '10vh'}}>
+        <Row 
+            align='middle'  
+            style={{
+                backgroundColor:'rgba(31, 72, 91, 1)', height: '10vh'}}>
             <Col span={24}>
                 <Row align='middle' justify='space-around'>
                     <Col span={8}>
@@ -44,12 +50,9 @@ export default function Navbar() {
                             {items.map((item)=>{
                                 return(
                                     <Col>
-                                        <span 
-                                            style={{
-                                                color: 'white',
-                                                fontSize: 'large',
-                                                fontWeight: '600',
-                                            }}>
+                                        <span
+                                            onClick={()=>setActive(item.key)} 
+                                            className={`navitem-w ${active===item.key?'active':''}`}>
                                             {item.label}
                                         </span>
                                     </Col>
