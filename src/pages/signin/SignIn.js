@@ -77,6 +77,7 @@ function SignIn() {
                     <Row gutter={[0, 35]}>
                       <Col span={24}>
                         <Input
+                          required
                           allowClear
                           placeholder="Full Name"
                           className="signin-input-w"
@@ -84,6 +85,7 @@ function SignIn() {
                       </Col>
                       <Col span={24}>
                         <Input
+                          required
                           allowClear
                           placeholder="Email"
                           className="signin-input-w"
@@ -91,6 +93,7 @@ function SignIn() {
                       </Col>
                       <Col span={24}>
                         <Input.Password
+                          required
                           allowClear
                           placeholder="Password"
                           className="signin-input-w"
@@ -98,6 +101,7 @@ function SignIn() {
                       </Col>
                       <Col span={24}>
                         <Button 
+                            htmlType="submit"
                             shape="round"
                             size="large"
                             block
