@@ -1,0 +1,18 @@
+.signin-input-w{
+    border-radius: 0;
+    font-size: large;
+    padding-left: 0;
+    border-bottom: 1px solid rgba(0,0,0,1) !important;
+    border: 0;
+    box-shadow: 3px 3px 8px white;
+    &:focus{
+        border-radius: 0;
+    }
+    ::placeholder{
+        font-size: large;
+        color: rgba(0,0,0,.5) !important;
+        font-weight: 600;
+        margin-left: 0;
+    }
+   
+}

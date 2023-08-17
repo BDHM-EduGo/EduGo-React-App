@@ -1,4 +1,4 @@
-import './App.css';
+import './assets/styles/app.scss';
 import SignIn from './pages/signin/SignIn';
 
 
