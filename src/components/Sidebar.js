@@ -68,7 +68,7 @@ export default function Sidebar() {
       <Row
         style={{
           width: collapsed ? 80 : 256,
-          marginTop: "3%",
+          margin: "3% 0",
           backgroundColor: "rgba(31, 72, 91, 1)",
           padding:collapsed ?"10px 0": "11px",
           borderTopRightRadius: 18,
